@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pandul High School - বন্ধুদের প্ল্যাটফর্ম</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- নেভিগেশন বার -->
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="fas fa-school"></i> Pandul High School Friends
+            </a>
+            <div class="navbar-nav">
+                <a href="login.html" class="btn btn-light">লগইন</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- হেডার -->
+    <header class="text-center py-5 bg-light">
+        <div class="container">
+            <h1 class="display-4">স্বাগতম!</h1>
+            <p class="lead">এখানে আপনি আপনার মতামত এবং ছবি শেয়ার করতে পারেন</p>
+        </div>
+    </header>
+
+    <!-- মূল কন্টেন্ট -->
+    <main class="container my-5">
+        <div class="row">
+            <!-- পোস্ট তৈরির ফর্ম -->
+            <div class="col-md-8 mx-auto">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h5><i class="fas fa-pen"></i> নতুন পোস্ট তৈরি করুন</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="postForm">
+                            <div class="mb-3">
+                                <label class="form-label">আপনার নাম</label>
+                                <input type="text" class="form-control" id="name" required>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">আপনার মতামত</label>
+                                <textarea class="form-control" id="content" rows="3" required></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">ছবি আপলোড (ঐচ্ছিক)</label>
+                                <input type="file" class="form-control" id="image" accept="image/*">
+                            </div>
+                            <button type="submit" class="btn btn-primary">পোস্ট করুন</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- পোস্ট দেখার এলাকা -->
+        <div class="row mt-5" id="postContainer">
+            <!-- ডায়নামিকভাবে পোস্ট দেখাবে -->
+        </div>
+    </main>
+
+    <!-- ফুটার -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2023 Pandul High School | Developed with ❤️ for Friends</p>
+        <p class="small">
+            <i class="fas fa-envelope"></i> contact@pandulhighschool.edu.bd | 
+            <i class="fas fa-phone"></i> +880 XXXX-XXXXXX
+        </p>
+    </footer>
+
+    <!-- স্ক্রিপ্ট -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
